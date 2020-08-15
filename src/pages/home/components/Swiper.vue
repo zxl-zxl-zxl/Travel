@@ -5,7 +5,7 @@
     <swiper-slide v-for="item of swiperList" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl" />
     </swiper-slide>
-    <div class="swiper-pagination"  slot="pagination"></div>
+    <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
 </div>
 </template>
@@ -21,10 +21,10 @@ export default{
       },
       swiperList: [{
         id: '0001',
-        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/37a42ce34dc16cd43bad17570bf6ab31.jpg_750x200_65d24bd7.jpg'
+        imgUrl: '//imgs.qunarzz.com/vc/e3/a1/71/f498dfd3bed948d623c9093252.jpg_92.jpg'
       }, {
         id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg'
+        imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/c0a60fa20379efa4f02ce527a680dc1b.jpeg'
       }]
     }
   }
@@ -38,7 +38,7 @@ export default{
     overflow:hidden
     width:100%
     height:0
-    padding-bottom:26.67%
+    padding-bottom:30.4%
     background: #eee
     .swiper-img
       width:100%
