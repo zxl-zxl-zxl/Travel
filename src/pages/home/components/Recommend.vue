@@ -4,7 +4,7 @@
     <ul>
       <li
       class="item border-bottom"
-      v-for="item of recommendList"
+      v-for="item of list"
       :key="item.id"
       >
           <img class="item-img" :src="item.imgUrl" />
@@ -21,25 +21,8 @@
 <script>
 export default{
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/d3/d3fecf2c578296bba3.img.jpg_200x200_e5fb63fb.jpg',
-        title: '长隆欢乐世界',
-        desc: '爱挑战的你怎能错过垂直过山车'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201309/06/a03726324b885c8bc8d65eac.jpg_200x200_109f2c42.jpg',
-        title: '广州塔',
-        desc: '扭动600米高的小蛮腰'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/1c/1c67791edbe2677b90.img.jpg_200x200_ff903759.jpg',
-        title: '珠江夜游',
-        desc: '感受羊城夜景的美与魅'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
