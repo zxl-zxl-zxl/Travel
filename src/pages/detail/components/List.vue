@@ -5,8 +5,8 @@
     v-for="(item, index) of list"
     :key="index"
     >
-      <div class="item-title">
-        <span class="item-title-icon border-bottom"></span>
+      <div class="item-title border-bottom">
+        <span class="item-title-icon"></span>
         {{item.title}}
       </div>
       <div v-if="item.children" class="item-children">
@@ -33,7 +33,7 @@ export default {
     display:inline-block
     width:.36rem
     height:.36rem
-    background:url(https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20202/ea3f321aea9fbf93098a78bdddd3306f.png) 0 -.45rem no-repeat
+    background:url(https://profile.csdnimg.cn/9/2/E/1_hansen666666) 0 -.45rem no-repeat
     margin-right:.1rem
     background-size:.4rem 3rem
   .item-title
